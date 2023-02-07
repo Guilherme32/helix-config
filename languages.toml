@@ -1,0 +1,5 @@
+[[language]]
+name = "markdown"
+language-server = { command = "ltex-ls" }
+max-line-length = 80
+

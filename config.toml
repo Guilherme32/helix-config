@@ -1,0 +1,50 @@
+theme = "kanagawa" # "autumn" # "tokyonight_storm" # "everforest_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+auto-save = true
+rulers = [80, 100, 120]
+bufferline = "always"
+auto-format = false        # pode ser útil mais pra frente
+
+[editor.statusline]
+separator = "🍂"
+mode.normal = "🦜NORMAL🦜"
+mode.insert = "🦃INSERT🦃"
+mode.select = "🦆SELECT🦆"
+left = ["mode", "separator", "file-encoding", "file-type", "separator"]
+center = ["workspace-diagnostics", ]
+right = ["separator", "separator", "selections", "separator", "position", "position-percentage"]
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.whitespace.render]
+space = "all"
+nbsp = "all"
+tab = "all"
+tabpad = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+tabpad = ">"
+
+[editor.indent-guides]
+render = true
+character = "|"
+
+[keys.normal]
+space = { q = ":reflow" }
+
+# 🐁🐭🦔🐧🦢🦉🐢🐠🕸🐷🦚🐓🐦🐧🕊
